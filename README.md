@@ -1,4 +1,5 @@
 # File Upload Tool
+**如果你是中文母语者，请前往https://www.npmjs.com/package/enlarge-file-upload?activeTab=readme 有着更合适的文档**
 **Please download the latest version of the library first**
 This is a toolkit for uploading large files, providing a series of functions to support features such as pause, resume, upload progress, and built-in error retransmission strategies. It supports resume broken downloads, retransmission, retries, and more (this library relies on the axios library for uploads, so do not use it if your project does not support axios).
 
