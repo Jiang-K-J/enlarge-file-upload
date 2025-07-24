@@ -1,6 +1,6 @@
 {
   "name": "enlarge-file-upload",
-  "version": "1.0.22",
+  "version": "x.y.z",
   "description": "A tool for chunked file upload with concurrency control.",
   "main": "dist/upload.js",
   "files": [
