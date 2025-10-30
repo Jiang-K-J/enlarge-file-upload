@@ -1,171 +1,191 @@
-### Changelog
+### 更新日志
 
-Note: Versions 1.0.4 and earlier are beta versions with functional defects, please do not use
+说明：1.0.4 版本及之前版本，都是测试版，有功能缺陷，请勿使用
 
 ### 1.0.0
 
-- Beta version with functional defects, do not use
-- Initialization
-- Add basic methods
+- 测试版，有功能缺陷，请勿使用
+- 初始化
+- 添加基础方法
 
 ### 1.0.1
 
-- Beta version with functional defects, do not use
+- 测试版，有功能缺陷，请勿使用
 
 ### 1.0.2
 
-- Beta version with functional defects, do not use
+- 测试版，有功能缺陷，请勿使用
 
 ### 1.0.3
 
-- Beta version with functional defects, do not use
+- 测试版，有功能缺陷，请勿使用
 
 ### 1.0.4
 
-- Beta version with functional defects, do not use
+- 测试版，有功能缺陷，请勿使用
 
 ### 1.0.5
 
-- Fix upload defects
+- 修复上传缺陷
 
 ### 1.0.6
 
-- Remove redundant modules, no functional changes
+- 删除冗余模块，不涉及功能上的更改
 
 ## 1.0.7
 
-- Improve documentation and changelog
+- 完善使用文档及更新日志
 
 ## 1.0.8 - 1.0.16
 
-- Beta version, only supports partial functionality
+- 测试版，仅支持部分功能
 
 ## 1.0.17
 
-- Stable version with basic large file upload functionality
+- 稳定版本，具备大文件上传基本功能
 
 ## 1.0.18
 
-- Add upload speed callback function
-- Add file hash calculation
+- 增加上传速度回调函数
+- 增加文件 hash 值计算
 
 ## 1.0.19
 
-- Fix bug where speed callback function not called on second upload
+- 修复二次上传，速度回调函数不被调用 bug
 
 ## 1.0.20
 
-- Add option to choose between async or sync hash calculation
+- 增加可选项，可选择异步或同步计算 hash 值
 
 ## 1.0.21
 
-- No functional changes, only update documentation, add React hooks usage example
+- 不涉及功能变更，仅更新文档，增加 react hooks 封装使用示例
 
 ## 1.0.22
 
-- Add optional parameter startOffset to specify starting chunk index for upload
-- Add optional parameter includeChunks to specify which chunks to upload
-- If both startOffset and includeChunks exist and startOffset is not 0, startOffset takes priority
+- 增加可选参数 startOffset，可指定从某个切片索引位置开始上传
+- 增加可选参数 includeChunks，可指定只上传某几个切片
+- 如果 startOffset 和 includeChunks 参数同时存在，且 startOffset 不为 0，默认优先使用 startOffset 参数
 
 ## 1.0.23
 
-- No functional changes, only update documentation, add GitHub address
+- 不涉及功能变更，仅更新文档，增加 github 地址
 
 ## 1.0.24
 
-- No functional changes, only update documentation, update GitHub address
+- 不涉及功能变更，仅更新文档，更新 github 地址
 
 ## 1.0.25
 
-- Test TS type support-----Beta version, do not use
+- 测试 TS 类型支持-----测试版，勿用
 
 ## 1.0.26
 
-- Test TS type support-----Beta version, do not use
+- 测试 TS 类型支持-----测试版，勿用
 
 ## 1.0.27
 
-- Add TS type support
+- 增加 TS 类型支持
 
 ## 1.0.28
 
-- Fix retry upload bug
-- Add file, errorMsg and totalChunks data to state
-- More friendly error messages on upload failure
+- 修改失败重传 bug
+- state 增加 file 、errorMsg 和 totalChunks 数据
+- 上传失败时，有更友好的错误提示
 
 ## 1.0.29
 
-- Fix file hash calculation anomaly issue
+- 修复文件hash值计算异常问题
 
 ## 1.0.30
 
-- No functional changes, only update README documentation
+- 不涉及功能变更，仅更新README文档
 
 ## 1.0.31
 
-- No functional changes, only update README documentation
+- 不涉及功能变更，仅更新README文档
 
 ## 1.0.32
 
-- No functional changes, only update README documentation
+- 不涉及功能变更，仅更新README文档
 
 ## 1.0.33
 
-- No functional changes, only update README documentation
+- 不涉及功能变更，仅更新README文档
 
 ## 1.0.34
 
-- No functional changes, add online demo address
+- 不涉及功能变更，增加线上演示地址
 
 ## 2.0.35
 
-- Add reset upload function
-- Improve TS type descriptions
+- 新增重置上传函数
+- 完善ts类型描述
 
 # 2.1.0
-Hash restructuring phase 1:
-- Restructure hash calculation logic
-- Add hashMap for all chunks
-- Return all chunks
+hahs重构一期:
+- hash计算逻辑重构
+- 新增所有切片hashMap
+- 返回所有切片
 
 # 2.2.0
-Hash restructuring phase 2:
-- Restructure hash calculation logic
-- Add checker function
-- Re-enable onError callback
+hahs重构二期:
+- hash计算逻辑重构
+- 新增checker函数
+- 重新上线onError回调
 
 # 2.3.0-beta.1
-- Optimize onSuccess callback
-- Optimize reset function
-- Other minor changes
+- 优化onSuccess回调
+- 优化reset函数
+- 其它非主要变更
 
 # 2.3.0-rc.1
-- Fix infinite loop in pause function
-- Add TS type exports
+- 修复暂停函数死循环问题
+- ts补充类型暴露
 
 # 2.3.0-rc.2
-- Fix multiple hash package import issue
+- 修复hash包被多次引入问题
 
 # 2.3.0
-- Fix error callback function parameter bug
-- Comprehensive testing
+- 修复错误回调函数参数bug
+- 全面实战测试
 
 # 2.3.1
-- Add and fix TS types
+- ts类型补充及修复
 
 # 2.3.2
-- Add and fix TS types
-- Add documentation address
+- ts类型补充及修复
+- 增加文档地址
 
 # 2.3.3
-- No functional changes, only update documentation
+- 不涉及功能变更，仅更新文档
 
 # 2.3.4
-- No functional changes, only update documentation
+- 不涉及功能变更，仅更新文档
 
 # 2.3.5
-- Add and fix TS types
+- ts类型补充及修复
 
 # 2.3.6
-- Support custom hash calculation
-- Update readme documentation
+- 支持自定义hash值计算
+- 修改readme文档
+
+# 2.3.7
+- 类型补充
+
+# 2.3.8
+- 支持抽样hash计算
+- 增加LICENSE文件
+
+# 2.3.9 - 该版本有严重缺陷，请勿使用
+- 新增utils工具函数模块
+- hash256改为本地导入
+
+# 2.3.10-beta.1
+- 修复hash256本地导入异常问题
+
+# 2.3.10
+- 完善ts类型定义
+
+# 2.3.11
+- 优化包体积，减少包大小
