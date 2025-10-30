@@ -1,25 +1,31 @@
 # File Upload Tool
 
-**Please download the latest version first**
-This is a toolkit for large file uploads, providing a series of functions to support pause, resume, upload progress and other features. It has built-in error retransmission strategies and supports breakpoint resume, retransmission, and retry functionality (this library's upload is based on axios library, if your project doesn't support axios, please don't use it...).<br>
-**Online demo address: http://jiang-12-13.com:8988/ This is only for demonstrating the large file upload cases of this library. Uploading illegal content or using it for other purposes is strictly prohibited. Please be kind to the server**<br>
-**QQ Discussion Group: 324710217 You can directly consult related questions in the group, and we guarantee to answer all questions. You can join the group chat to discuss with other developers.**
-## Documentation
+**请优先下载最新版本库**
+这是一个用于大文件上传的工具包，提供了系列函数用来支持暂停、恢复、上传进度等功能，内置了错误重传策略，支持断点续传、重传、重试等功能（此库上传基于 axios 库，如果项目不支持 axios，勿用...）。<br>
+**QQ 讨论群：324710217 群内有相关问题可以直接咨询，做到有问必答，可以加入群聊，与其他开发者共同讨论。**
+## 使用文档
 **地址：** http://jiang-12-13.com:9898/
 
-## Installation
+## 演示案例
+**地址：** http://jiang-12-13.com:8988/
+**本演示仅用于本库大文件上传案例在线演示，严禁上传违法内容和做其它用处。请善待服务器**<br>
+
+## npm 地址
+**地址：** https://www.npmjs.com/package/enlarge-file-upload
+
+## 安装
 
 ```sh
 npm install enlarge-file-upload
 ```
-## CDN
+## CDN引入
 ```sh
 <script src="https://unpkg.com/enlarge-file-upload@latest/dist/upload.js"></script>
 ```
 
-## Introduction
-This library is built with JavaScript at its core and supports any front-end framework or framework-free project. Its main function is large file uploading, designed to be ready to use out of the box. With minimal setup, you can implement large file upload operations while maintaining powerful extensibility. For detailed usage, please refer to the documentation: http://jiang-12-13.com:9898/
+## 简介
+本库底层采用javascript编写，支持任何前端框架或非框架项目。主要功能为大文件上传，做到开箱即用，只需要极简的操作便可实现大文件上传相关操作，且拥有强大的可扩展性。具体使用请参考使用文档：http://jiang-12-13.com:9898/
 
-## Suggestions
+## 建议
 
-If you have better suggestions for this toolkit or need support for new features, feel free to raise an issue or join our QQ group: 324710217. Let's discuss and improve together.
+如果对此工具包有更好的建议或需要支持新的功能，欢迎提 issue 或者加入QQ群：324710217，做到一起讨论，一起改进。
