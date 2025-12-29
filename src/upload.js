@@ -102,7 +102,7 @@ function createUploader(config) {
         formData.append("chunk", chunk);
         formData.append("hash", hash);
         formData.append("index", index);
-        const url = config.url || `http://localhost:3000/api/users`;
+        const url = config.url;
         try {
           await axios.post(url, formData, { cancelToken });
           uploadedChunks++;
