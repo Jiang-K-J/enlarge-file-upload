@@ -189,3 +189,46 @@ hahs重构二期:
 
 # 2.3.11
 - 优化包体积，减少包大小
+
+# 2.4.0-beta.1
+- hash3期重构
+- 新增customHashApi属性
+- 新增axiosInstance属性
+
+# 2.4.0-rc.1
+- 修复分片hash为空问题
+
+# 2.4.0
+- hash3期重构稳定版
+- utils模块新增多线程计算hash函数
+
+# 2.4.1
+- 规范utils模块命名
+
+# 2.4.2
+- 新增高级日志记录功能
+- 增强暂停继续功能
+
+# 2.4.3-rc.1
+- 新增多文件上传功能
+- 新增eta属性
+
+# 2.4.3-rc.2
+- 修复错误重传异常bug
+
+# 2.4.3-rc.3
+- 对大体积文件hash计算策略做出调整
+- 修改属性名customHashApi为hashMode
+- 多文件上传：
+    新增hashMode属性
+    新增axiosInstance属性
+    新增onFileAdded回调函数
+
+# 2.4.3
+- 修复onError的ts类型缺失问题
+
+# 2.4.4
+- 修复自定义chunkSize不一致问题
+- 优化上传接口参数
+- 修复跳过文件hash计算后，文件自动上传失效bug
+

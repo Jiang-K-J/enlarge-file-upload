@@ -5,21 +5,6 @@ async function computeFileHashDirect(file, progressCallback, chunkSize = 5 * 102
     let offset = 0;
 
     reader.onerror = () => reject(reader.error);
-    reader.onload = (e) => {
-      const data = new Uint8Array(e.target.result);
-      shaObj.update(data); // 增量计算
-      offset += data.length;
-      // 调用进度回调函数
-      if (progressCallback) {
-        progressCallback((offset / file.size) * 100);
-      }
-
-      if (offset < file.size) {
-        readNext();
-      } else {
-        resolve(shaObj.hex());
-      }
-    };
 
     function readNext() {
       const slice = file.slice(offset, offset + chunkSize);

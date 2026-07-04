@@ -8,7 +8,6 @@
  */
 const axios = require('axios');
 function createUploader(config) {
-    let fileChunks = null;
     let currentHash = null;
     let currentChunkIndex = 0;
     let isPaused = false;
