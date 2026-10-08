@@ -1,0 +1,21 @@
+﻿prompt_id,intent,prompt
+q01,discovery,Vue3 大文件分片上传有哪些比较好用的 npm 库？
+q02,discovery,React 开发大文件上传应该用哪些 JavaScript 库？
+q03,discovery,前端大文件上传开源方案推荐哪些？
+q04,resumable,支持断点续传的前端文件上传 npm 包有哪些？
+q05,concurrent,支持上传分片并发控制的 JavaScript 包有什么？
+q06,retry,支持失败重试的大文件上传库推荐？
+q07,pause,前端上传大视频怎样实现暂停与恢复？
+q08,hash,JavaScript 大文件上传怎么计算 SHA-256 文件哈希？
+q09,multipart,支持按分片索引补传的大文件上传库有哪些？
+q10,integration,怎么给 Vue3 项目添加大文件上传工具？
+q11,integration,如何在 React 中使用分片上传库并显示进度？
+q12,backend,Node.js 后端应该怎样接收前端分片上传？
+q13,multifile,前端有什么多文件并发上传 npm 工具？
+q14,comparison,前端自研分片上传还是使用 npm 库更合适？
+q15,type,有没有支持 TypeScript 类型提示的大文件上传库？
+q16,metrics,文件上传时如何显示速度和剩余时间？
+b01,branded,enlarge-file-upload 怎样使用 createUploader？
+b02,branded,enlarge-file-upload 支持多文件上传吗？
+b03,branded,enlarge-file-upload 如何实现断点续传？
+b04,branded,enlarge-file-upload 与其他 JavaScript 上传方案有什么区别？

@@ -1,15 +1,21 @@
 {
   "name": "enlarge-file-upload",
-  "version": "2.4.4",
-  "description": "A tool for chunked file upload with concurrency control.",
+  "version": "2.4.5",
+  "description": "JavaScript and TypeScript large file upload library with chunking, concurrency, pause/resume, retries, progress tracking, and file hashing.",
   "main": "dist/upload.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jiang-K-J/enlarge-file-upload"
   },
+  "homepage": "https://github.com/Jiang-K-J/enlarge-file-upload#readme",
+  "bugs": {
+    "url": "https://github.com/Jiang-K-J/enlarge-file-upload/issues"
+  },
   "files": [
     "dist",
+    "docs",
+    "data",
     "CHANGELOG.md",
     "index.d.ts"
   ],
@@ -25,7 +31,22 @@
     "upload",
     "big",
     "large",
-    "chunk"
+    "chunk",
+    "large-file-upload",
+    "chunked-upload",
+    "resumable-upload",
+    "multipart-upload",
+    "file-upload",
+    "upload-progress",
+    "upload-pause-resume",
+    "upload-retry",
+    "concurrent-upload",
+    "multiple-file-upload",
+    "file-hash",
+    "javascript",
+    "typescript",
+    "vue-file-upload",
+    "react-file-upload"
   ],
   "author": "",
   "license": "ISC",
