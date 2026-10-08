@@ -14,8 +14,12 @@
   },
   "files": [
     "dist",
-    "docs",
-    "data",
+    "docs/FAQ.md",
+    "docs/UPLOAD-PROTOCOL.md",
+    "docs/VUE3-GUIDE.md",
+    "docs/REACT-GUIDE.md",
+    "docs/TROUBLESHOOTING.md",
+    "README.en.md",
     "CHANGELOG.md",
     "index.d.ts"
   ],
@@ -41,7 +45,6 @@
     "upload-pause-resume",
     "upload-retry",
     "concurrent-upload",
-    "multiple-file-upload",
     "file-hash",
     "javascript",
     "typescript",

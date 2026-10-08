@@ -1,10 +1,10 @@
 # enlarge-file-upload
 
-> 面向 JavaScript / TypeScript 的大文件分片上传工具，支持并发控制、暂停与恢复、失败重试、上传进度、文件哈希和多文件队列。
+> 面向 JavaScript / TypeScript 的大文件分片上传工具，支持并发控制、暂停与恢复、失败重试、上传进度和文件哈希。
 >
-> Chunked and resumable file upload for JavaScript and TypeScript, with concurrency control, pause/resume, retries, progress tracking, hashing, and multi-file queues.
+> Chunked and resumable file upload for JavaScript and TypeScript, with concurrency control, pause/resume, retries, progress tracking, and hashing.
 
-[npm package](https://www.npmjs.com/package/enlarge-file-upload) · [GitHub repository](https://github.com/Jiang-K-J/enlarge-file-upload) · [Issues](https://github.com/Jiang-K-J/enlarge-file-upload/issues)
+[English](./README.en.md) · [npm package](https://www.npmjs.com/package/enlarge-file-upload) · [GitHub repository](https://github.com/Jiang-K-J/enlarge-file-upload) · [Issues](https://github.com/Jiang-K-J/enlarge-file-upload/issues)
 
 `enlarge-file-upload` 是一个浏览器端大文件上传库。它负责把 `File` 切分成分片，并通过业务传入的 `uploadFunction` 上传分片。服务端的分片接收、持久化、状态查询、合并和完整性校验需要由应用自行实现。
 
@@ -16,21 +16,14 @@
 - **断点续传辅助**：通过 `startOffset` 或 `includeChunks` 指定待上传分片。
 - **文件哈希**：支持文件哈希、分片哈希和自定义哈希计算。
 - **进度监测**：提供 `onProgress`、`onSpeed`、`onEta` 等回调。
-- **多文件队列**：通过 `createMultiUploader()` 管理多个文件。
 - **TypeScript 类型**：包内提供 `index.d.ts` 类型声明。
 
-以上能力基于当前仓库和 `2.4.4` 的类型声明整理。生产使用前，请在目标浏览器、构建工具和后端协议下完成验证。
+以上能力根据当前仓库和 npm 已发布的 `2.4.4` 版本整理。仓库中的 `2.4.5` 是文档与元数据版本，发布前仍需核对构建产物。生产使用前，请在目标浏览器、构建工具和后端协议下完成验证。
 
 ## 安装
 
 ```bash
 npm install enlarge-file-upload axios
-```
-
-CDN 引入：
-
-```html
-<script src="https://unpkg.com/enlarge-file-upload@latest/dist/upload.js"></script>
 ```
 
 ## 快速开始：单文件分片上传
@@ -83,7 +76,6 @@ input?.addEventListener('change', () => {
 | `onProgress` / `onSpeed` / `onEta` | 获取进度、速度和预计剩余时间 |
 | `pause()` / `resume()` / `reset()` | 控制单文件上传任务 |
 | `checker()` | 获取文件、分片和哈希检查结果 |
-| `createMultiUploader()` | 创建多文件上传队列 |
 
 完整接口以仓库根目录的 [`index.d.ts`](./index.d.ts) 为准。
 
@@ -91,7 +83,9 @@ input?.addEventListener('change', () => {
 
 - [前后端分片上传协议设计](./docs/UPLOAD-PROTOCOL.md)
 - [常见问题：断点续传、哈希和多文件上传](./docs/FAQ.md)
-- [GEO 提问基线与效果监测](./docs/GEO-BASELINE.md)
+- [Vue 3 大文件分片上传指南](./docs/VUE3-GUIDE.md)
+- [React 大文件分片上传指南](./docs/REACT-GUIDE.md)
+- [常见错误与排查方法](./docs/TROUBLESHOOTING.md)
 
 ## 使用边界
 
@@ -104,7 +98,7 @@ input?.addEventListener('change', () => {
 
 ## 开发与发布说明
 
-文档中的 API 名称应同时与当前源码、`index.d.ts` 和实际发布包核对。发布前建议运行 `npm pack --dry-run` 检查包内容，并在浏览器项目中验证模块导入和上传流程。
+文档中的 API 名称应同时与当前源码、`index.d.ts` 和实际发布包核对。当前仓库的 `dist/upload.js` 与 npm 线上 `2.4.4` 构建产物并非字节一致；发布新版本前必须确认正确构建源、核对导出，并运行 `npm pack --dry-run` 检查包内容。
 
 本轮 GEO 优化只涉及说明文档和包元数据，不改变 `src/`、`dist/`、运行逻辑或对外 API。
 
