@@ -6,9 +6,9 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jiang-K-J/enlarge-file-upload"
+    "url": "git+https://github.com/Jiang-K-J/enlarge-file-upload.git"
   },
-  "homepage": "https://github.com/Jiang-K-J/enlarge-file-upload#readme",
+  "homepage": "https://jiang-12-13.com:9898/",
   "bugs": {
     "url": "https://github.com/Jiang-K-J/enlarge-file-upload/issues"
   },
@@ -45,13 +45,14 @@
     "upload-pause-resume",
     "upload-retry",
     "concurrent-upload",
+    "multiple-file-upload",
     "file-hash",
     "javascript",
     "typescript",
     "vue-file-upload",
     "react-file-upload"
   ],
-  "author": "",
+  "author": "Jiang-K-J",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.7",
@@ -63,6 +64,6 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "axios": "^1.7.9"
+    "axios": "^1.20.0"
   }
 }

@@ -34,7 +34,7 @@ const uploader = createUploader({
 
 先确认安装版本，并检查实际包中的 `dist/upload.js` 与 `index.d.ts` 是否对应。类型声明存在不代表当前构建产物一定包含相同导出。
 
-当前仓库的 `dist/upload.js` 与 npm 已发布的 `2.4.4` 文件并非字节一致。在发布新版本前，应恢复可复现构建或使用经过核对的发布产物，并增加导出冒烟测试。
+GitHub 仓库中的 `dist/upload.js` 主要用于演示，不应据此判断 npm 安装包的运行时导出。请以实际安装版本为准，并通过导出冒烟测试确认 `dist/upload.js` 与 `index.d.ts` 相匹配。
 
 ## CDN 引入后找不到全局变量
 

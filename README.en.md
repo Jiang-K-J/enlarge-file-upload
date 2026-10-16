@@ -64,7 +64,7 @@ An upload reaching 100% on the client does not mean that the server has assemble
 
 ## Release note
 
-Repository version `2.4.5` contains documentation and package-metadata changes only. Before publishing it, the repository bundle must be reconciled with the currently published `2.4.4` artifact and its exports must be verified. Do not rebuild or publish the runtime bundle as part of a documentation-only update without that verification.
+Version `2.4.5` contains documentation and package-metadata changes only. The repository `dist/upload.js` is primarily a demo artifact; npm consumers should rely on the files in the installed package. Verify runtime exports and run `npm pack --dry-run` before every release.
 
 ## License
 
