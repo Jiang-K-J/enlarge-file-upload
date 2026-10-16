@@ -1,6 +1,6 @@
 {
   "name": "enlarge-file-upload",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "description": "JavaScript and TypeScript large file upload library with chunking, concurrency, pause/resume, retries, progress tracking, and file hashing.",
   "main": "dist/upload.js",
   "types": "index.d.ts",
